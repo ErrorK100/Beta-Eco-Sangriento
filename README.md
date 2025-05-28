@@ -74,8 +74,8 @@ eco-sangriento/
 
 1. Baixe ou clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/eco-sangriento.git
-````
+   git clone https://github.com/seu-usuario/eco-sangriento.git ```
+
 
 2. Abra o arquivo `index.html` com um navegador moderno.
 
