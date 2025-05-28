@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eco Sangriento - Loja</title>
+  <link rel="stylesheet" href="style/global.css">
+</head>
+<body>
+  <div class="loja-container">
+    <h1>Loja de Skins</h1>
+    <p>Moedas: <span id="moedas">0</span></p>
+
+    <div class="skins-list">
+      <div class="skin-item" data-skin="soldado">
+        <img src="assets/skins/soldado.png" alt="Soldado">
+        <p>Soldado - 0 moedas</p>
+        <button class="comprar-btn">Equipar</button>
+      </div>
+
+      <div class="skin-item" data-skin="sniper">
+        <img src="assets/skins/sniper.png" alt="Sniper">
+        <p>Sniper - 300 moedas</p>
+        <button class="comprar-btn">Comprar</button>
+      </div>
+
+      <div class="skin-item" data-skin="camuflado">
+        <img src="assets/skins/camuflado.png" alt="Camuflado">
+        <p>Camuflado - 600 moedas</p>
+        <button class="comprar-btn">Comprar</button>
+      </div>
+
+      <div class="skin-item" data-skin="cyborg">
+        <img src="assets/skins/cyborg.png" alt="Cyborg">
+        <p>Cyborg - 1000 moedas</p>
+        <button class="comprar-btn">Comprar</button>
+      </div>
+    </div>
+
+    <button onclick="window.location.href='jogo.html'">Voltar ao jogo</button>
+  </div>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/firebase-skins.js"></script>
+  <script type="module" src="js/loja.js"></script>
+</body>
+</html>

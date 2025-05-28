@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eco Sangriento - Jogo</title>
+  <link rel="stylesheet" href="style/global.css">
+</head>
+<body>
+  <div class="hud">
+    <p>Jogador: <span id="usuarioNome">Convidado</span></p>
+    <p>Moedas: <span id="moedasHUD">0</span></p>
+    <p>Skin atual: <span id="skinHUD">Soldado</span></p>
+    <button onclick="window.location.href='loja.html'">Ir para a loja</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/firebase-skins.js"></script>
+  <script type="module" src="js/jogo.js"></script>
+</body>
+</html>
