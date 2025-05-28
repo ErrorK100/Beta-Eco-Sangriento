@@ -1,0 +1,82 @@
+/* css/efeitos.css */
+
+/* Fade-in genérico */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out */
+  .fade-out {
+    animation: fadeOut 0.4s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Botão com pulso para ações importantes */
+  .pulsar {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 60, 60, 0.4);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px rgba(255, 60, 60, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 60, 60, 0.4);
+    }
+  }
+  
+  /* Dano recebido (tela vermelha rápida) */
+  .dano-recebido {
+    animation: danoFlash 0.3s ease-in-out;
+  }
+  
+  @keyframes danoFlash {
+    0% {
+      background-color: rgba(255, 0, 0, 0.4);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  /* Kill feed animado */
+  .kill-feed {
+    animation: slideInKill 0.4s ease-out forwards;
+    transform: translateX(100%);
+  }
+  
+  @keyframes slideInKill {
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Partículas genéricas (uso futuro com JS) */
+  .particula {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    width: 4px;
+    height: 4px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  

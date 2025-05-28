@@ -1,0 +1,73 @@
+/* css/jogo.css */
+
+#hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  
+  #hud .info {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    pointer-events: auto;
+  }
+  
+  #minimapa {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 9;
+  }
+  
+  #crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+  }
+  
+  #armaHud {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+  }
+  
+  #armaHud img {
+    width: 50px;
+    height: auto;
+  }
+  
+  #botaoTiro {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ff3c3c;
+    border: none;
+    z-index: 12;
+    cursor: pointer;
+  }
+  
